@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Tela de login</title>
+    <link rel="stylesheet" href="estilo.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script>
+        function logar(){
+            var login = document.getElementById('usuario-login').value;
+            var senha = document.getElementById('usuario-password').value;
+            if(login == "admin" && senha =="admin"){
+                alert('sucesso')
+                location.href = "validado.html";
+            }else{
+                alert('Usuario ou senha incorretos')
+            }
+        }
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="main-login">
+        <div class="left-login">
+            <h1>Faça login <br>E entre para nosso time</h1>
+            <img src="diving-with-sharks-animate.svg" class="avg-flutuante" alt="imagemtubarao">
+        </div>
+        <div class="right-login">
+            <div class="card-login">
+                <h1>LOGIN</h1>
+                <div class="textfield">
+                    <label for="usuario">Usuario</label>
+                    <input type="text" name="usuario" placeholder="Usuario" id="usuario-login">
+                </div>
+                <div class="textfield">
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" placeholder="Senha" id="usuario-password">
+                </div>
+                <div class="btn-recovery-container">
+                    <a href="" class="btn-recovery">Esqueceu a senha?</a>
+                </div>
+                <button id="btnLogin" onclick="logar()">Login</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
