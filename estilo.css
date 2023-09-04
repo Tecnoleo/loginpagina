@@ -65,6 +65,11 @@ body *{
     margin: 0 10px;
 
 }
+#direitos-reservados{
+    display:flex;
+    position: absolute;
+    margin-top: 900px;
+}
 .textfield > input{
     width: 100%;
     border: none;
@@ -107,6 +112,12 @@ body *{
         width:85%
     }   
 }
+@media only screen and (max-width: 1400px) {
+    #direitos-reservados{
+    position: fixed;
+    margin-bottom: 300px;
+    }
+}
 @media only screen and (max-width: 600px) {
     .main-login{
         flex-direction: column;
@@ -129,5 +140,8 @@ body *{
     }
     .card-login{
         width: 90%;
+    }
+    #direitos-reservados{
+        font-size: 10px;
     }
 }
